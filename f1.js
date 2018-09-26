@@ -48,9 +48,10 @@ function oppRecip(b){
 // (4) Fourth Task
 // Declare a function named pthagorean() which has two inputs you guessed it a and b.
 // The function outputs the value of the third side of the right triangle.
-function pthagorean(a,b){
+function pythagorean(a,b){
     let c = a*a + b*b;
-    return c;
+    let total = Math.sqrt(c);
+    return total;
 }
 
 
@@ -62,7 +63,7 @@ function pthagorean(a,b){
 // Declare a function named circleArea() which has one input named radius.
 // The function outputs the area of the circle.
 function circleArea(radius){
-    let area = radius*radius*math.pi;
+    let area = radius*radius*Math.PI;
     return area;
 }
 
@@ -115,7 +116,9 @@ function yo(fam){
 // (9) Ninth Task
 // Declare a function named beefDay() which has no inputs.
 // This function should output a long string, IN ALL CAPS, of "BEEF DAY" with lots of extra E's, F's, A's, and Y's
-function
+function beefDay(){
+    return "BEEEEEEFFFFFFF DAAAAAAYYYYY";
+}
 
 
 
@@ -129,8 +132,10 @@ function
 // (10) Tenth Task
 // Declare a function named xor() which has two inputs a and b.
 // This function returns the exclusive or of the two boolean inputs.
+function xor(a, b){
+    return a && b || a;
 
-
+}
 
 
 
@@ -140,3 +145,22 @@ function
 
 
 /**************************** END OF FILE *******************************/
+function main(){
+    let x = 5;
+    console.log(`For the next few examples let x = ${x}`);
+    console.log(`1. double the number = ${double(x)}`);
+    console.log(`2. adding one to the number = ${plusplus(x)}`);
+    console.log(`3. the opposite reciprocal of ${x} is ${oppRecip(x)}`);
+    console.log(`4. the pythagorean theorem does 5 = ${pythagorean(3,4)}?`);
+    console.log(`5. the circle with radius ${x} has area = ${circleArea(x)}`);
+    console.log(`6. the volume of a ${x}, ${2*x}, ${3*x} box has volume = ${boxVolume(x,2*x,3*x)}`);
+    console.log(`7. ${thisIsMadness("SPARTA")}`);
+    console.log(`8. ${yo("dude")}`);
+    console.log(`9. ${beefDay()}`);
+    console.log(`10. first test: true == ${xor(true,false)} == ${xor(false,true)}`);
+    console.log(`10. second test: false == ${xor(true,true)} == ${xor(false,false)}`);
+  
+  }
+  
+  //execution of main function
+  main();
