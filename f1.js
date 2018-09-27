@@ -49,8 +49,8 @@ function oppRecip(b){
 // Declare a function named pthagorean() which has two inputs you guessed it a and b.
 // The function outputs the value of the third side of the right triangle.
 function pythagorean(a,b){
-    let c = a*a + b*b;
-    let total = Math.sqrt(c);
+    let c = Math.sqrt(a*a + b*b);
+    let total = c;
     return total;
 }
 
@@ -133,8 +133,7 @@ function beefDay(){
 // Declare a function named xor() which has two inputs a and b.
 // This function returns the exclusive or of the two boolean inputs.
 function xor(a, b){
-    return a && b || a;
-
+    return ((a && !b) || (!a && b));
 }
 
 
@@ -155,7 +154,7 @@ function main(){
     console.log(`5. the circle with radius ${x} has area = ${circleArea(x)}`);
     console.log(`6. the volume of a ${x}, ${2*x}, ${3*x} box has volume = ${boxVolume(x,2*x,3*x)}`);
     console.log(`7. ${thisIsMadness("SPARTA")}`);
-    console.log(`8. ${yo("dude")}`);
+    console.log(`8. ${yo(" dude")}`);
     console.log(`9. ${beefDay()}`);
     console.log(`10. first test: true == ${xor(true,false)} == ${xor(false,true)}`);
     console.log(`10. second test: false == ${xor(true,true)} == ${xor(false,false)}`);
